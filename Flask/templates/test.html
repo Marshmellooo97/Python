@@ -1,0 +1,144 @@
+{% extends "layouts/main.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap 101 Template</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <style>
+            
+            .jumbotron{
+                background-image: url(https://hdhintergrundbilder.net/image/natur/1140/see-berge-reflexion-wasser-landschaft.jpg);
+                text-align: center;
+                height: 600px;
+            } 
+            .lead{
+                font-size: 140%;
+                font-weight: bold;
+            }            
+            .ueberDieApp{
+                text-align: center;
+                margin-top: 50px;
+            }
+            .container{
+                margin-top: 50px;
+            }
+             #footer{
+                
+                background-color:darkgray;
+                text-align: center;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                margin-top: 50px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            .Bild{
+                width: 340px;
+                margin-bottom: 20px;
+            }
+            #mitte{
+                text-align: center;
+            }
+        </style>
+    </head>
+<body data-spy="scroll" data-target="#navbar">
+
+       
+           <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">Titel</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#Home">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ueberDieApp">Über die App</a>
+              </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#appHerunterLaden">App herunterladen</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+
+
+    <div class="jumbotron">
+          <h1 class="display-4" id="Home">Meine tolle App</h1>
+          <p class="lead">Dies ist warum du dir die App unbedingt herunterladen musst!</p>
+          <hr class="my-4">
+          <p class="lead">Möchtest Du mehr über die App erfahren? Dann trage Dich doch in unsere Mailingliste ein.</p>
+          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </div>
+    
+    
+    
+    
+    <div class="ueberDieApp" id="ueberDieApp">
+        <h1>Darum ist die App toll</h1>
+        <p>Zusammenfassung der tollen Features!</p>
+    
+    
+    
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm" class="img-thumbnail">
+            <div class="img-thumbnail">
+                <img class="Bild" src="https://www.fotomagazin.de/sites/www.fotomagazin.de/files/styles/opengraph/public/fm/2019/aufmacher_fotowettbewerb_haida_landschaft.jpg?itok=4c63m9J3">
+                <h4>Mehr Infos zur App</h4>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                </p>
+            </div>
+        </div>
+        <div class="col-sm" class="img-thumbnail">
+            <div class="img-thumbnail">
+                <img class="Bild" src="https://www.fotomagazin.de/sites/www.fotomagazin.de/files/styles/opengraph/public/fm/2019/aufmacher_fotowettbewerb_haida_landschaft.jpg?itok=4c63m9J3">
+                <h4>Mehr Infos zur App</h4>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                </p>
+            </div>
+        </div>
+        <div class="col-sm" class="img-thumbnail">
+            <div class="img-thumbnail">
+                <img class="Bild" src="https://www.fotomagazin.de/sites/www.fotomagazin.de/files/styles/opengraph/public/fm/2019/aufmacher_fotowettbewerb_haida_landschaft.jpg?itok=4c63m9J3">
+                <h4>Mehr Infos zur App</h4>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                </p>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container" id="appHerunterLaden">    
+        <div class="row" id="footer">
+            <h2 id="mitte">Lade die App herunter!</h2>
+            <p id="mitte"><a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Available_on_the_App_Store_%28black%29_SVG.svg/320px-Available_on_the_App_Store_%28black%29_SVG.svg.png"></a></p>
+        </div> 
+    </div>        
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script>
+
+        </script>
+    </body>
+</html>
+
+
+{% endblock%}

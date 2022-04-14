@@ -1,0 +1,23 @@
+{% extends "layouts/main.html" %}
+
+{% block content %}
+    {% if name != None:%}
+        <h4>Der Name ist: {{name}}</h4>
+        <h4>Dein Alter ist: {{age}}</h4>
+    {% endif%}
+    <form method="get">
+        <label for="name">Name: </label>            <!--Textfeldbeschriftung -->
+        <input type="text" name="name" id="name" value= {{name}} /> <!--Textfeld -->
+        <label for="age">Alter: </label>
+        <input type="text" name="age" id="age" value={{age}} />
+
+        <br />          <!--Umbruch -->
+
+        <input type="submit" value="Formular abschicken!" />
+    </form>
+
+
+
+
+{% endblock%}
+

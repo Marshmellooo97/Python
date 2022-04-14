@@ -1,0 +1,31 @@
+{% extends "layouts/main.html" %}
+{% block content %}
+
+    
+
+    <h1>Kontakt </h1>
+    <div class="row" >
+
+        {% if fehler: %}
+            <p>{{fehlerM}}</p>
+        {% endif%}
+
+        <div class="six columns">
+            <form method="get">
+                
+                <label for="vorname">Vorname:</label>            <!--Textfeldbeschriftung -->
+                <input type="text" name="vorname" id="vorname" value="{{bla}}"/> <!--Textfeld -->
+                <label for="nachname">Nachname:</label>            <!--Textfeldbeschriftung -->
+                <input type="text" name="nachname" id="nachname" value="{{nachname}}"/> <!--Textfeld -->
+                <label for="age">Alter: </label>
+                <input type="text" name="age" id="age" value={{age}} />
+                <label for="mail">E-Mail:</label>            <!--Textfeldbeschriftung -->
+                <input type="text" name="mail" id="mail" value="{{mail}}"/> <!--Textfeld -->
+                <br />          <!--Umbruch -->
+                <input type="submit" value="Formular abschicken!" />
+                
+            </form>
+            
+        </div>
+    
+{% endblock%}

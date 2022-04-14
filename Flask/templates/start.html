@@ -1,0 +1,152 @@
+{% extends "layouts/main.html" %}
+{% block content %}
+
+<style>      
+    .jumbotron{
+        background-image: url(https://hdhintergrundbilder.net/image/natur/1140/see-berge-reflexion-wasser-landschaft.jpg);
+        text-align: center;
+        height: 600px;
+    }
+    .lead{
+        font-size: 140%;
+        font-weight: bold;
+    }            
+    .ueberDieApp{
+        text-align: center;
+        margin-top: 50px;
+    }
+    .container{
+        margin-top: 50px;
+    }
+     #footer{
+        
+        background-color:darkgray;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .Bild{
+        width: 340px;
+        margin-bottom: 20px;
+    }
+    #mitte{
+        text-align: center;
+    }
+</style>
+
+<div class="jumbotron">
+    <h1 class="display-4" id="Home">Wilkommen zu Humanty</h1>
+    <p class="lead">Warum Humanty das beste ist!!!</p>
+    <hr class="my-4">
+    <p class="lead">Möchtest Du mehr über Humanty erfahren? Dann trage Dich doch in unsere Mailingliste ein.</p>
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+</div>
+<div class="ueberDieApp" id="ueberDieApp">
+    <h1>Darum ist die Humanty toll</h1>
+    <p>Zusammenfassung der tollen Features!</p>
+
+
+
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm" class="img-thumbnail">
+        <div class="img-thumbnail">
+            <img class="Bild" src="https://www.fotomagazin.de/sites/www.fotomagazin.de/files/styles/opengraph/public/fm/2019/aufmacher_fotowettbewerb_haida_landschaft.jpg?itok=4c63m9J3">
+            <h4>Mehr Infos zu Humanty</h4>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+            </p>
+        </div>
+    </div>
+    <div class="col-sm" class="img-thumbnail">
+        <div class="img-thumbnail">
+            <img class="Bild" src="https://www.fotomagazin.de/sites/www.fotomagazin.de/files/styles/opengraph/public/fm/2019/aufmacher_fotowettbewerb_haida_landschaft.jpg?itok=4c63m9J3">
+            <h4>Mehr Infos zu Humanty</h4>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+            </p>
+        </div>
+    </div>
+    <div class="col-sm" class="img-thumbnail">
+        <div class="img-thumbnail">
+            <img class="Bild" src="https://www.fotomagazin.de/sites/www.fotomagazin.de/files/styles/opengraph/public/fm/2019/aufmacher_fotowettbewerb_haida_landschaft.jpg?itok=4c63m9J3">
+            <h4>Mehr Infos zu Humanty</h4>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+            </p>
+        </div>
+    </div>
+  </div>
+</div>
+
+    <p>Mein Name ist: {{person[1] }} {{person[0]}} </p>
+    {% for item in items: %}
+        <p>{{item["name"]}} Anzahl: {{item["Anzahl"]}}</p>
+    {% endfor %}
+
+
+    <div class="row" >
+        <div class="six columns">
+           <table class="u-full-width">
+                <thead>
+                    <tr>
+                        <th>Überschrift 1 </th>
+                        <th>Überschrift 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Zelle1</td>
+                        <td>Zelle2</td>
+                    </tr>
+                    <tr>
+                        <td>Spalte2</td>
+                    </tr>
+                </tbody>
+           </table>
+        </div>
+        <div class="six columns">
+            2.Bereich
+        </div>
+    </div>
+
+{% endblock%}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

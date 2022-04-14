@@ -1,0 +1,100 @@
+{% extends "layouts/main.html" %}
+{% block content %}
+    <h1>Justins Wechselkursrechner </h1>
+
+
+    <div class="row" >
+
+        <div class="six columns">
+            <form method="get">
+                <label for="name">Wechselkurs:</label>            <!--Textfeldbeschriftung -->
+                <input type="text" name="wechselkurs" id="name" value="{{wechselkurs}}"/> <!--Textfeld -->
+                <label for="VON">Währung 1:</label>            <!--Textfeldbeschriftung -->
+                <input type="text" name="VON" id="VON" value="{{VON}}"/> <!--Textfeld -->
+                <label for="IN">Währung 2:</label>            <!--Textfeldbeschriftung -->
+                <input type="text" name="IN" id="IN" value="{{IN}}"/> <!--Textfeld -->
+                <br />          <!--Umbruch -->
+                <input type="submit" value="Formular abschicken!" />
+
+            </form>
+        </div>
+
+        <div class="six columns">
+           <table class="u-full-width">
+                <thead>
+                    <tr>
+                        <th>{{VON}} </th>
+                        <th>{{IN}}</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>1.{{VON}}</td>
+                        <td>{{d[1]}}</td>
+                    </tr>
+                    <tr>
+                        <td>2.{{VON}}</td>
+                        <td> {{d[2]}} </td>
+                    </tr>
+                    <tr>
+                        <td>3.{{VON}}</td>
+                        <td> {{d[3]}} </td>
+                    </tr>
+                    <tr>
+                        <td>4.{{VON}}</td>
+                        <td> {{d[4]}} </td>
+                    </tr>
+                    <tr>
+                        <td>5.{{VON}}</td>
+                         <td> {{d[5]}} </td>
+                    </tr>
+                    <tr>
+                        <td>6.{{VON}}</td>
+                        <td> {{d[6]}} </td>
+                    </tr>
+                    <tr>
+                        <td>7.{{VON}}</td>
+                        <td> {{d[7]}} </td>
+                    </tr>
+                    <tr>
+                        <td>8.{{VON}}</td>
+                        <td> {{d[8]}} </td>
+                    </tr>
+                    <tr>
+                        <td>9.{{VON}}</td>
+                        <td> {{d[9]}} </td>
+                    </tr>
+                    <tr>
+                        <td>10.{{VON}}</td>
+                        <td> {{d[10]}} </td>
+                    </tr>
+                    <tr>
+                        <td>20.{{VON}}</td>
+                        <td> {{d[20]}} </td>
+                    </tr>
+                    <tr>
+                        <td>50.{{VON}}</td>
+                        <td> {{d[50]}} </td>
+                    </tr>
+                    <tr>
+                        <td>100.{{VON}}</td>
+                        <td> {{d[100]}} </td>
+                    </tr>
+                    <tr>
+                        <td>200.{{VON}}</td>
+                        <td> {{d[200]}} </td>
+                    </tr>
+                    <tr>
+                        <td>500.{{VON}}</td>
+                        <td> {{d[500]}} </td>
+                    </tr>
+                </tbody>
+           </table>
+        </div>
+    </div>
+
+
+
+{% endblock%}
+
