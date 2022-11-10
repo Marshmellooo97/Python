@@ -5,6 +5,7 @@ text = ' AH;W""SHVJSHAWVHTSD"SKHt AHJ HASKHW ASK HAS HlSJu;VWDZSijHt AHWtZHoSJAS
 kombi = 'ABCDEFGHIJKLMNOPQRSTUVWZabcdefghijklmnopqrstuvwxz -"_.:,;!?[]()'  
 zählen = []
 prozent = []
+listDoppel = {}
 for x in range(len(kombi)):
     zählen.append(0)
 for i, s in enumerate(kombi):
@@ -14,7 +15,15 @@ for y,p in enumerate(zählen):
     prozent.append(f'{kombi[y]}: {round(p * 100 / len(text), 6)}')
 #print(zählen)
 print(prozent)
-
+for d, do in enumerate(text):
+    try:
+        if do == text[d +1]:
+            if do in listDoppel:
+                listDoppel[do] = listDoppel.get(do) + 1
+            else:listDoppel[do] = 1
+    except:
+        pass
+print(listDoppel)
 
 # H=18 S=11  leerzeichen=8 J=6.2 W=5,7 V=5,4
 # E N I R T S A H D
@@ -22,19 +31,19 @@ print(prozent)
 neu = ''
 for s in text:
     if s == 'H':
-        neu += '    '
-    elif s == ' ':
+        neu += 'e'
+    elif s == 'e':
         neu += 'H'
 
     elif s == 'S':
-        neu += 'e'
-    elif s == 'e':
-        neu += 's'
-        
-    elif s == 'J':
         neu += 'n'
     elif s == 'n':
-        neu += 'J'
+        neu += 's'
+        
+    elif s == ' ':
+        neu += 't'
+    elif s == 't':
+        neu += ' '
 
         '''
     elif s == 'J':
