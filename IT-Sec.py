@@ -31,20 +31,17 @@ print(listDoppel)
 neu = ''
 for s in text:
     if s == 'H':
-        neu += 'e'
-    elif s == 'e':
-        neu += 'H'
-
+        neu += '     '
     elif s == 'S':
-        neu += 'n'
-    elif s == 'n':
-        neu += 's'
-        
+        neu += 'e'  
     elif s == ' ':
-        neu += 't'
-    elif s == 't':
-        neu += ' '
-
+        neu += 'n'
+    elif s == 'J':
+        neu += 'i'
+    elif s == 'W':
+        neu += 'a'
+    elif s == 'V':
+        neu += 's'
         '''
     elif s == 'J':
         neu += 'r'
