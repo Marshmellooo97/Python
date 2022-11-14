@@ -22,19 +22,19 @@ print(prozent)
 neu = ''
 for s in text:
     if s == 'H':
-        neu += '    '
-    elif s == ' ':
+        neu += 'e'
+    elif s == 'e':
         neu += 'H'
 
     elif s == 'S':
-        neu += 'e'
-    elif s == 'e':
-        neu += 's'
-        
-    elif s == 'J':
         neu += 'n'
     elif s == 'n':
-        neu += 'J'
+        neu += 's'
+        
+    elif s == ' ':
+        neu += 't'
+    elif s == 't':
+        neu += ' '
 
         '''
     elif s == 'J':
