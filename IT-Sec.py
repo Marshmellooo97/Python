@@ -126,8 +126,13 @@ for s in text:
         neu += 'A'
     elif s == 'B':
         neu += 'L'
+    elif s == '?':
+        neu += 'C'
     
     else: neu += '_'
     
     
 print(neu)
+
+# abcdefghijklmnopqrstuvwxyz
+# DF:UwPS*l,BROzbIH**uc!AW*o
