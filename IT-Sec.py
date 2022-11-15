@@ -42,7 +42,92 @@ for s in text:
         neu += 'a'
     elif s == 'V':
         neu += 's'
-
+    elif s == 'u':
+        neu += 'c'
+    elif s == ';':
+        neu += 'h'
+    elif s == '"':
+        neu += 't'
+    elif s == 'N':
+        neu += 'k'
+    elif s == 'A':
+        neu += 'd'
+    elif s == 't':
+        neu += 'u'
+    elif s == 'L':
+        neu += 'g'
+    elif s == '.':
+        neu += 'm'
+    elif s == 'K':
+        neu += 'r'
+    elif s == 'z':
+        neu += 'o'
+    elif s == 'i':
+        neu += 'l'
+    elif s == ':':
+        neu += 'K'
+    elif s == 'Q':
+        neu += 'T'
+    elif s == 'b':
+        neu += 'F'
+    elif s == 'g':
+        neu += 'S'
+    elif s == '-':
+        neu += 'M'
+    elif s == 'j':
+        neu += ','    
+    elif s == 'o':
+        neu += 'b'
+    elif s == 'k':
+        neu += 'B'
+    elif s == 'q':
+        neu += 'H'
+    elif s == 'Z':
+        neu += 'f'
+    elif s == 'e':
+        neu += 'w'
+    elif s == 'D':
+        neu += 'p'
+    elif s == 'n':
+        neu += 'z'
+    elif s == 'T':
+        neu += 'Z'
+    elif s == 'l':
+        neu += 'R'
+    elif s == 'd':
+        neu += 'U'
+    elif s == 'O':
+        neu += 'v'
+    elif s == 'I':
+        neu += '.'
+    elif s == 'a':
+        neu += 'D'
+    elif s == 'c':
+        neu += ':'
+    elif s == 'f':
+        neu += 'P'
+    elif s == 'p':
+        neu += 'I'
+    elif s == 'U':
+        neu += 'E'
+    elif s == 'G':
+        neu += 'N'
+    elif s == ',':
+        neu += '"'
+    elif s == 'x':
+        neu += 'W'
+    elif s == 'v':
+        neu += '!'
+    elif s == 'R':
+        neu += 'G'
+    elif s == 'm':
+        neu += 'O'
+    elif s == 'w':
+        neu += 'A'
+    elif s == 'B':
+        neu += 'L'
+    
     else: neu += '_'
+    
     
 print(neu)
