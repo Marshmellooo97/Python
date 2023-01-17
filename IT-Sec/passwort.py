@@ -14,7 +14,7 @@ def check_password(password):
     return hashed_password == HASH
 
 def main():
-    with open("C:\\Programmieren\\IT-Sec\\Wortliste_Deutsch.txt") as file:
+    with open("C:\\GitProgrammieren\\Python\\Python\\IT-Sec\\Wortliste_Deutsch.txt") as file:
         for word in file:
             word = word.strip()
             for i in range(len(word)):

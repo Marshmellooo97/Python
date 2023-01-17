@@ -1,5 +1,3 @@
-package itsec;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.math.BigInteger;
@@ -29,7 +27,7 @@ public class bruteForce {
 
 		Scanner scan = null;
 		try {
-			scan = new Scanner(new File("C:\\Programmieren\\IT-Sec\\Wortliste_Deutsch.txt"));
+			scan = new Scanner(new File("C:\\GitProgrammieren\\Python\\Python\\IT-Sec\\Wortliste_Deutsch.txt"));
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
